@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the companion manuscript (under review) and the baseline model paper."
+title: "market-aware-low-carbon-fjsp"
+abstract: "Tri-objective flexible job-shop scheduling integrating time-of-use electricity pricing, machine speed selection and carbon cap-and-trade, with a same-reality evaluation protocol and a dynamic rescheduling extension."
+authors:
+  - family-names: "Wen"
+    given-names: "Zijun"
+license: MIT
+license-url: https://opensource.org/licenses/MIT
+repository-code: "https://github.com/ZJ55668899/market-aware-low-carbon-fjsp"
+type: software
+version: 0.1.0
+date-released: 2026-10-14
