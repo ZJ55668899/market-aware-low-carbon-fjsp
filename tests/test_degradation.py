@@ -1,17 +1,16 @@
 """Degradation self-check (chaogai step 5 check 1): C1 model with extensions
 switched off must reproduce the base static model exactly."""
-import os
 import random
 
-from fjsp.c1_model import TOUSpeedCarbonModel
+from fjsp.c1_model import TOUSpeedCarbonModel, FlatUnifiedModel
 from fjsp.instance import gear_shaft_instance, load_brandimarte
 from fjsp.nsga2 import make_chromosome, Config
 from fjsp.schedule import StaticEnergyCostModel, decode
 
 rng = random.Random(7)
 for inst in (gear_shaft_instance(), load_brandimarte("instances/Mk01.fjs")):
-    base, ext = StaticEnergyCostModel(), TOUSpeedCarbonModel(tou=False, speeds=False,
-                                                             cap_trade=False)
+    base, ext = FlatUnifiedModel(), TOUSpeedCarbonModel(tou=False, speeds=False,
+                                                        cap_trade=False)
     worst = 0.0
     for _ in range(200):
         os_seq, ms = make_chromosome(inst, Config(init="glr"), rng)

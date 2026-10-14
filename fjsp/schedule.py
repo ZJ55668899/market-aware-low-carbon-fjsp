@@ -8,7 +8,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from .instance import CARBON_DELTA, ELEC_PRICE, Instance, SPEED_LEVELS
+from .instance import (CARBON_DELTA, ELEC_PRICE, Instance, SPEED_LEVELS,
+                     SPEED_POWER_EXP)
 
 
 @dataclass
@@ -22,6 +23,9 @@ class Schedule:
     machine_busy: list = field(default_factory=list)   # per machine total busy min
     machine_blocks: list = field(default_factory=list)  # per machine #busy blocks
     speeds: list = field(default_factory=list)          # per op speed factor (C1)
+    gaps: list = field(default_factory=list)            # per machine internal idle gaps [(s,e)]
+    block_starts: list = field(default_factory=list)    # per machine busy block start times
+    op_power_kw: list = field(default_factory=list)     # per op applied power kW (speed-scaled)
 
 
 def decode(inst: Instance, os_seq, ms_sel, speeds=None) -> Schedule:
@@ -36,7 +40,10 @@ def decode(inst: Instance, os_seq, ms_sel, speeds=None) -> Schedule:
     sch = Schedule(start=[0.0] * n_ops, end=[0.0] * n_ops, machine_of=[-1] * n_ops,
                    machine_busy=[0.0] * inst.n_machines,
                    machine_blocks=[0] * inst.n_machines,
-                   speeds=[1.0] * n_ops)
+                   speeds=[1.0] * n_ops,
+                   gaps=[[] for _ in range(inst.n_machines)],
+                   block_starts=[[] for _ in range(inst.n_machines)],
+                   op_power_kw=[0.0] * n_ops)
     for jid in os_seq:
         k = ptr[jid]
         op_id = inst.job_ops[jid][k]
@@ -44,16 +51,22 @@ def decode(inst: Instance, os_seq, ms_sel, speeds=None) -> Schedule:
         op = inst.ops[op_id]
         alt_idx = ms_sel[op_id] % len(op.alts)
         m, t = op.alts[alt_idx]
+        pw = inst.op_power[op_id].get(m, inst.proc_power[m]) if inst.op_power else inst.proc_power[m]
         if speeds is not None:
-            s = SPEED_LEVELS[speeds[op_id] % len(SPEED_LEVELS)]
-            sch.speeds[op_id] = s
-            t = t / s
+            sv = SPEED_LEVELS[speeds[op_id] % len(SPEED_LEVELS)]
+            sch.speeds[op_id] = sv
+            t = t / sv
+            pw = pw * sv ** SPEED_POWER_EXP
+        sch.op_power_kw[op_id] = pw
         prev_end = sch.end[inst.job_ops[jid][k - 1]] if k > 0 else 0.0
         s = max(prev_end, mach_ready[m])
         e = s + t
         sch.start[op_id], sch.end[op_id], sch.machine_of[op_id] = s, e, m
         if s > mach_last_end[m] + 1e-9:
             sch.machine_blocks[m] += 1
+            if mach_last_end[m] > -1e17:
+                sch.gaps[m].append((mach_last_end[m], s))
+            sch.block_starts[m].append(s)
         mach_last_end[m] = e
         mach_ready[m] = e
         sch.machine_busy[m] += t

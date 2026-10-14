@@ -134,6 +134,7 @@ _GEAR = {
 }
 
 SPEED_LEVELS = [0.8, 1.0, 1.2]   # C1 speed factors (assumption C1-c)
+SPEED_POWER_EXP = 2.0            # P(s) = P0 * s**beta (assumption C1-c)
 ELEC_PRICE = 0.8118       # yuan/kWh, Zhejiang industrial average (paper sec 4.2)
 CARBON_DELTA = 0.5703     # kgCO2/kWh, national grid 2024 (paper sec 4.2)
 WAGE_RATE = 0.5           # yuan/min labor rate -- assumption A5
