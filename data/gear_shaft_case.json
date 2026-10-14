@@ -1,0 +1,1004 @@
+{
+ "source": "Table 3 of Mei et al. 2024, Machines 12(9):590, doi:10.3390/machines12090590",
+ "n_jobs": 10,
+ "n_machines": 15,
+ "material_cost": [
+  250,
+  500,
+  600,
+  700,
+  1850,
+  1800,
+  300,
+  600,
+  600,
+  200
+ ],
+ "jobs": [
+  {
+   "job": 0,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 10.8,
+       "power_kw": 0.6
+      },
+      {
+       "machine": 1,
+       "time_min": 15,
+       "power_kw": 0.88
+      },
+      {
+       "machine": 2,
+       "time_min": 11.7,
+       "power_kw": 0.78
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 10,
+       "power_kw": 0.6
+      },
+      {
+       "machine": 1,
+       "time_min": 7.5,
+       "power_kw": 0.44
+      },
+      {
+       "machine": 2,
+       "time_min": 9.2,
+       "power_kw": 0.6
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 3,
+       "time_min": 25.9,
+       "power_kw": 2.8
+      },
+      {
+       "machine": 4,
+       "time_min": 30,
+       "power_kw": 3.3
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 55.9,
+       "power_kw": 17.2
+      },
+      {
+       "machine": 6,
+       "time_min": 51.7,
+       "power_kw": 14.5
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 5.8,
+       "power_kw": 0.78
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 8,
+       "time_min": 23.4,
+       "power_kw": 8.8
+      },
+      {
+       "machine": 9,
+       "time_min": 20,
+       "power_kw": 7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 1,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 13.3,
+       "power_kw": 0.8
+      },
+      {
+       "machine": 1,
+       "time_min": 12.5,
+       "power_kw": 0.73
+      },
+      {
+       "machine": 2,
+       "time_min": 14.2,
+       "power_kw": 0.95
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 11.7,
+       "power_kw": 0.7
+      },
+      {
+       "machine": 1,
+       "time_min": 15,
+       "power_kw": 0.9
+      },
+      {
+       "machine": 2,
+       "time_min": 13.3,
+       "power_kw": 0.89
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 3,
+       "time_min": 27.5,
+       "power_kw": 3
+      },
+      {
+       "machine": 4,
+       "time_min": 30.9,
+       "power_kw": 3.3
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 43.4,
+       "power_kw": 13.6
+      },
+      {
+       "machine": 6,
+       "time_min": 46.7,
+       "power_kw": 14.2
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 7.5,
+       "power_kw": 0.1
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 8,
+       "time_min": 26.7,
+       "power_kw": 10
+      },
+      {
+       "machine": 9,
+       "time_min": 25.9,
+       "power_kw": 9.1
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 2,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 18.3,
+       "power_kw": 1
+      },
+      {
+       "machine": 1,
+       "time_min": 22.5,
+       "power_kw": 1.3
+      },
+      {
+       "machine": 2,
+       "time_min": 20.9,
+       "power_kw": 1.4
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 23.4,
+       "power_kw": 1.4
+      },
+      {
+       "machine": 1,
+       "time_min": 25.9,
+       "power_kw": 1.5
+      },
+      {
+       "machine": 2,
+       "time_min": 28.4,
+       "power_kw": 1.9
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 3,
+       "time_min": 38.4,
+       "power_kw": 4.2
+      },
+      {
+       "machine": 4,
+       "time_min": 33.4,
+       "power_kw": 3.6
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 55.9,
+       "power_kw": 17.2
+      },
+      {
+       "machine": 6,
+       "time_min": 62.6,
+       "power_kw": 17.4
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 6.7,
+       "power_kw": 0.09
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 8,
+       "time_min": 34.2,
+       "power_kw": 12.8
+      },
+      {
+       "machine": 9,
+       "time_min": 40.9,
+       "power_kw": 14.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 3,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 20,
+       "power_kw": 1.17
+      },
+      {
+       "machine": 1,
+       "time_min": 23.4,
+       "power_kw": 1.37
+      },
+      {
+       "machine": 2,
+       "time_min": 17.5,
+       "power_kw": 1.17
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 21.7,
+       "power_kw": 1.3
+      },
+      {
+       "machine": 1,
+       "time_min": 25.9,
+       "power_kw": 1.5
+      },
+      {
+       "machine": 2,
+       "time_min": 18.3,
+       "power_kw": 1.2
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 3,
+       "time_min": 35,
+       "power_kw": 3.8
+      },
+      {
+       "machine": 4,
+       "time_min": 40.9,
+       "power_kw": 4.4
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 10,
+       "time_min": 5,
+       "power_kw": 1.0
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 45,
+       "power_kw": 13.9
+      },
+      {
+       "machine": 6,
+       "time_min": 48.4,
+       "power_kw": 13.3
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 5,
+       "power_kw": 0.7
+      }
+     ]
+    },
+    {
+     "operation": 6,
+     "alternatives": [
+      {
+       "machine": 9,
+       "time_min": 35,
+       "power_kw": 12.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 4,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 33.4,
+       "power_kw": 1.9
+      },
+      {
+       "machine": 1,
+       "time_min": 36.7,
+       "power_kw": 2.1
+      },
+      {
+       "machine": 2,
+       "time_min": 35,
+       "power_kw": 2.34
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 39.2,
+       "power_kw": 2.3
+      },
+      {
+       "machine": 1,
+       "time_min": 38.4,
+       "power_kw": 2.24
+      },
+      {
+       "machine": 2,
+       "time_min": 39.2,
+       "power_kw": 2.6
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 3,
+       "time_min": 48.4,
+       "power_kw": 5.2
+      },
+      {
+       "machine": 4,
+       "time_min": 53.4,
+       "power_kw": 5.8
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 10,
+       "time_min": 32.5,
+       "power_kw": 6.5
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 81.8,
+       "power_kw": 25.2
+      },
+      {
+       "machine": 6,
+       "time_min": 90.1,
+       "power_kw": 24.8
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 5,
+       "power_kw": 0.7
+      }
+     ]
+    },
+    {
+     "operation": 6,
+     "alternatives": [
+      {
+       "machine": 8,
+       "time_min": 148.46,
+       "power_kw": 55
+      },
+      {
+       "machine": 9,
+       "time_min": 162.6,
+       "power_kw": 56.9
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 5,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 9.2,
+       "power_kw": 0.12
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 34.2,
+       "power_kw": 1.99
+      },
+      {
+       "machine": 1,
+       "time_min": 40,
+       "power_kw": 2.3
+      },
+      {
+       "machine": 2,
+       "time_min": 36.7,
+       "power_kw": 2.45
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 30,
+       "power_kw": 1.75
+      },
+      {
+       "machine": 1,
+       "time_min": 35,
+       "power_kw": 2.04
+      },
+      {
+       "machine": 2,
+       "time_min": 30,
+       "power_kw": 2.0
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 3,
+       "time_min": 16.7,
+       "power_kw": 1.8
+      },
+      {
+       "machine": 4,
+       "time_min": 20.9,
+       "power_kw": 1.9
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 10,
+       "time_min": 17.5,
+       "power_kw": 3.5
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 81.7,
+       "power_kw": 25.1
+      },
+      {
+       "machine": 6,
+       "time_min": 86.7,
+       "power_kw": 23.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 6,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 11,
+       "time_min": 60,
+       "power_kw": 7.5
+      },
+      {
+       "machine": 12,
+       "time_min": 61.7,
+       "power_kw": 7.7
+      },
+      {
+       "machine": 13,
+       "time_min": 75.9,
+       "power_kw": 11.4
+      },
+      {
+       "machine": 14,
+       "time_min": 80.1,
+       "power_kw": 12
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 15,
+       "power_kw": 0.88
+      },
+      {
+       "machine": 1,
+       "time_min": 18.3,
+       "power_kw": 1
+      },
+      {
+       "machine": 2,
+       "time_min": 14.2,
+       "power_kw": 0.95
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 17.5,
+       "power_kw": 1.02
+      },
+      {
+       "machine": 1,
+       "time_min": 21.7,
+       "power_kw": 1.3
+      },
+      {
+       "machine": 2,
+       "time_min": 18.3,
+       "power_kw": 1.2
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 55.9,
+       "power_kw": 17.2
+      },
+      {
+       "machine": 6,
+       "time_min": 61.7,
+       "power_kw": 17
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 11,
+       "time_min": 52.5,
+       "power_kw": 6.6
+      },
+      {
+       "machine": 12,
+       "time_min": 55,
+       "power_kw": 6.89
+      },
+      {
+       "machine": 13,
+       "time_min": 70.1,
+       "power_kw": 10.5
+      },
+      {
+       "machine": 14,
+       "time_min": 67.6,
+       "power_kw": 10
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 7,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 10,
+       "time_min": 12.5,
+       "power_kw": 2.5
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 32.5,
+       "power_kw": 1.9
+      },
+      {
+       "machine": 1,
+       "time_min": 38.4,
+       "power_kw": 2.2
+      },
+      {
+       "machine": 2,
+       "time_min": 34.2,
+       "power_kw": 2.28
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 18.3,
+       "power_kw": 0.2
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 24.2,
+       "power_kw": 1.4
+      },
+      {
+       "machine": 1,
+       "time_min": 27.5,
+       "power_kw": 1.6
+      },
+      {
+       "machine": 2,
+       "time_min": 22.5,
+       "power_kw": 1.5
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 9,
+       "time_min": 8.3,
+       "power_kw": 2.9
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 11,
+       "time_min": 94.2,
+       "power_kw": 11.8
+      },
+      {
+       "machine": 12,
+       "time_min": 95.9,
+       "power_kw": 11.99
+      },
+      {
+       "machine": 13,
+       "time_min": 67.6,
+       "power_kw": 10
+      },
+      {
+       "machine": 14,
+       "time_min": 71.7,
+       "power_kw": 10.8
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 8,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 75.9,
+       "power_kw": 23.4
+      },
+      {
+       "machine": 6,
+       "time_min": 105.9,
+       "power_kw": 29.1
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 35.9,
+       "power_kw": 2.1
+      },
+      {
+       "machine": 1,
+       "time_min": 38.4,
+       "power_kw": 2.24
+      },
+      {
+       "machine": 2,
+       "time_min": 35,
+       "power_kw": 2.3
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 7,
+       "time_min": 25.9,
+       "power_kw": 0.3
+      }
+     ]
+    },
+    {
+     "operation": 3,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 29.2,
+       "power_kw": 1.7
+      },
+      {
+       "machine": 1,
+       "time_min": 30.9,
+       "power_kw": 1.8
+      },
+      {
+       "machine": 2,
+       "time_min": 25.9,
+       "power_kw": 1.7
+      }
+     ]
+    },
+    {
+     "operation": 4,
+     "alternatives": [
+      {
+       "machine": 9,
+       "time_min": 8.3,
+       "power_kw": 2.9
+      }
+     ]
+    },
+    {
+     "operation": 5,
+     "alternatives": [
+      {
+       "machine": 11,
+       "time_min": 103.4,
+       "power_kw": 12.9
+      },
+      {
+       "machine": 12,
+       "time_min": 100.9,
+       "power_kw": 12.6
+      },
+      {
+       "machine": 13,
+       "time_min": 65.9,
+       "power_kw": 9.88
+      },
+      {
+       "machine": 14,
+       "time_min": 77.6,
+       "power_kw": 11.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "job": 9,
+   "operations": [
+    {
+     "operation": 0,
+     "alternatives": [
+      {
+       "machine": 5,
+       "time_min": 81.7,
+       "power_kw": 25.2
+      },
+      {
+       "machine": 6,
+       "time_min": 110.1,
+       "power_kw": 30.3
+      }
+     ]
+    },
+    {
+     "operation": 1,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 21.7,
+       "power_kw": 1.27
+      },
+      {
+       "machine": 1,
+       "time_min": 24.2,
+       "power_kw": 1.4
+      },
+      {
+       "machine": 2,
+       "time_min": 25.9,
+       "power_kw": 1.7
+      }
+     ]
+    },
+    {
+     "operation": 2,
+     "alternatives": [
+      {
+       "machine": 0,
+       "time_min": 26.7,
+       "power_kw": 1.56
+      },
+      {
+       "machine": 1,
+       "time_min": 30.9,
+       "power_kw": 1.8
+      },
+      {
+       "machine": 2,
+       "time_min": 27.5,
+       "power_kw": 1.8
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

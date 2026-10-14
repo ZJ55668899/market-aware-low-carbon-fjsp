@@ -1,0 +1,92 @@
+{
+ "electricity": {
+  "base_price_cny_per_kwh": 0.8118,
+  "tou_multiplier": {
+   "peak": 1.6,
+   "flat": 1.0,
+   "valley": 0.4
+  },
+  "tou_periods_min": [
+   [
+    0,
+    420,
+    "valley"
+   ],
+   [
+    420,
+    480,
+    "flat"
+   ],
+   [
+    480,
+    660,
+    "peak"
+   ],
+   [
+    660,
+    780,
+    "flat"
+   ],
+   [
+    780,
+    1140,
+    "peak"
+   ],
+   [
+    1140,
+    1260,
+    "flat"
+   ],
+   [
+    1260,
+    1380,
+    "valley"
+   ],
+   [
+    1380,
+    1440,
+    "valley"
+   ]
+  ]
+ },
+ "carbon": {
+  "emission_factor_kgco2_per_kwh": 0.5703,
+  "allowance_price_cny_per_kgco2": 0.08
+ },
+ "machine": {
+  "wage_rate_cny_per_min": 0.5,
+  "idle_to_rated_power_ratio": 0.2,
+  "startup_energy_equals_idle_minutes": 1.0
+ },
+ "speed": {
+  "levels": [
+   0.8,
+   1.0,
+   1.2
+  ],
+  "power_exponent_beta": 2.0
+ },
+ "synthetic_machine_power_profile_kw": [
+  1.0,
+  1.5,
+  2.0,
+  2.5,
+  3.0,
+  3.5,
+  4.0,
+  4.5,
+  5.0,
+  5.5,
+  6.0,
+  7.0,
+  8.0,
+  10.0,
+  12.0,
+  14.0,
+  17.0,
+  20.0,
+  25.0,
+  30.0
+ ],
+ "notes": "Constants mirrored in fjsp/instance.py and fjsp/c1_model.py; keep in sync. Synthetic profile applies to Brandimarte instances only (assumption A3); the gear-shaft case uses measured powers from gear_shaft_case.json."
+}

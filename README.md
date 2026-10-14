@@ -39,6 +39,29 @@ Run all commands from the repository root.
 
 Results (figures and JSON summaries) are written to `results/`.
 
+## Environment
+
+Tested with Python 3.9.23 and matplotlib 3.9.4 on Windows 11; the `fjsp/` package
+itself uses only the Python standard library, and matplotlib is needed by the
+experiment runners for figure output only. Create the environment with
+`conda env create -f environment.yml` or with a plain virtualenv plus
+`pip install -r requirements.txt`. All code is single-threaded pure Python, so
+wall-clock expectations on a desktop CPU are roughly one minute for
+`run_case.py 6 60`, five to ten minutes for `run_c1.py` and `run_c2.py` at the
+documented settings, and two to three hours for the full twenty-run
+`run_table2.py` reproduction over the ten Brandimarte instances.
+
+## Data
+
+`data/gear_shaft_case.json` holds the real workshop case (jobs, operations,
+candidate machines, processing times, measured powers, material costs)
+transcribed from Table 3 of the baseline paper, and `data/energy_parameters.json`
+collects every economic and energy parameter of the model, including the TOU
+period table, the emission factor, the allowance price and the synthetic power
+profile used for the Brandimarte family. `data/DATA.md` documents provenance,
+what ships with the repository, where to download the full Brandimarte set, and
+the sync policy between the JSON files and the code constants.
+
 ## Headline results
 
 Same-reality evaluation, i.e. every schedule settled under identical TOU and

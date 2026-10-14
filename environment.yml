@@ -1,0 +1,6 @@
+name: market-aware-fjsp
+channels:
+  - defaults
+dependencies:
+  - python=3.9
+  - matplotlib=3.9.4
