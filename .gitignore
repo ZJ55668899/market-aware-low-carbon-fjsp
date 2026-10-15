@@ -1,7 +1,2 @@
-__pycache__/
-*.pyc
-*.pyo
 results/
-.env
-.idea/
-.vscode/
+!data/results/

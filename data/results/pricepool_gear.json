@@ -1,0 +1,80 @@
+{
+ "instance": "gear",
+ "cap": 244.2620825837999,
+ "runs": 4,
+ "per_price": {
+  "0.0": {
+   "cost": {
+    "mean": 8403.18,
+    "sd": 5.73
+   },
+   "cost_excl": {
+    "mean": 8403.18,
+    "sd": 5.73
+   },
+   "carbon": {
+    "mean": 272.51,
+    "sd": 4.3
+   },
+   "makespan": {
+    "mean": 397.65,
+    "sd": 14.07
+   }
+  },
+  "0.08": {
+   "cost": {
+    "mean": 8405.44,
+    "sd": 5.48
+   },
+   "cost_excl": {
+    "mean": 8403.18,
+    "sd": 5.73
+   },
+   "carbon": {
+    "mean": 272.51,
+    "sd": 4.3
+   },
+   "makespan": {
+    "mean": 397.65,
+    "sd": 14.07
+   }
+  },
+  "0.8": {
+   "cost": {
+    "mean": 8421.74,
+    "sd": 4.93
+   },
+   "cost_excl": {
+    "mean": 8416.12,
+    "sd": 8.8
+   },
+   "carbon": {
+    "mean": 251.28,
+    "sd": 6.08
+   },
+   "makespan": {
+    "mean": 424.5,
+    "sd": 3.52
+   }
+  },
+  "2.0": {
+   "cost": {
+    "mean": 8423.26,
+    "sd": 3.01
+   },
+   "cost_excl": {
+    "mean": 8433.63,
+    "sd": 11.41
+   },
+   "carbon": {
+    "mean": 239.07,
+    "sd": 5.17
+   },
+   "makespan": {
+    "mean": 425.8,
+    "sd": 12.45
+   }
+  }
+ },
+ "emissions_nonincreasing": true
+}
