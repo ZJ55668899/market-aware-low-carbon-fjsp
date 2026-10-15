@@ -27,57 +27,45 @@ rush-job insertions and three rescheduling policies is included in `fjsp/dynamic
 
 ## Quick start
 
-Run all commands from the repository root.
+Run all commands from the repository root. The revised protocol entry point is
+`examples/run_c1_rev2.py`; the earlier `examples/run_c1.py` implements the first
+round protocol with the processing-only electricity ledger and is kept for
+traceability but superseded.
 
     pip install -r requirements.txt
-    python tests/test_degradation.py        # mechanisms off == baseline model
+    python tests/test_degradation.py        # mechanisms off == flat unified ledger
     python tests/test_decode_bounds.py      # decoder sanity
-    python examples/run_case.py 6 80        # gear-shaft workshop case
-    python examples/run_c1.py gear 6 80     # market-aware model vs baseline
+    python examples/run_c1_rev2.py gear 6 80   # unified-ledger main comparison
+    python examples/run_c1_pricepool.py gear 4 # common-pool carbon price response
     python examples/run_c2.py 8 4           # disruption scenarios, three policies
-    python examples/run_table2.py 20        # full Table 2 reproduction (long run)
+    python examples/run_table2.py 20        # baseline algorithm reproduction (long run)
 
-Results (figures and JSON summaries) are written to `results/`.
+Results, per-run front archives and result hashes are written to `results/` and
+`chaogai_output/` in the development workspace; the repository ships the summary
+JSONs under `data/results/`.
 
-## Environment
+## Headline results (unified ledger, revised protocol)
 
-Tested with Python 3.9.23 and matplotlib 3.9.4 on Windows 11; the `fjsp/` package
-itself uses only the Python standard library, and matplotlib is needed by the
-experiment runners for figure output only. Create the environment with
-`conda env create -f environment.yml` or with a plain virtualenv plus
-`pip install -r requirements.txt`. All code is single-threaded pure Python, so
-wall-clock expectations on a desktop CPU are roughly one minute for
-`run_case.py 6 60`, five to ten minutes for `run_c1.py` and `run_c2.py` at the
-documented settings, and two to three hours for the full twenty-run
-`run_table2.py` reproduction over the ten Brandimarte instances.
+Same-reality evaluation with a pre-registered selection rule (minimum real-cost
+point of the run-union non-dominated set), six runs of eighty generations per
+model and instance, and a price-blind speed-aware control group:
 
-## Data
+| Instance | Flat-price baseline | Price-blind speed-aware control | Market-aware integrated model |
+|---|---|---|---|
+| Gear-shaft case | 437.1 min, 8488.6 CNY, 241.3 kgCO2 | 430.0 min, 8416.5 CNY, 255.2 kgCO2 | 406.2 min, 8396.9 CNY, 290.2 kgCO2 |
+| Mk04 | 154.0 min, 166.4 CNY, 7.7 kgCO2 | 108.1 min, 147.4 CNY, 8.4 kgCO2 | 105.8 min, 145.1 CNY, 8.7 kgCO2 |
 
-`data/gear_shaft_case.json` holds the real workshop case (jobs, operations,
-candidate machines, processing times, measured powers, material costs)
-transcribed from Table 3 of the baseline paper, and `data/energy_parameters.json`
-collects every economic and energy parameter of the model, including the TOU
-period table, the emission factor, the allowance price and the synthetic power
-profile used for the Brandimarte family. `data/DATA.md` documents provenance,
-what ships with the repository, where to download the full Brandimarte set, and
-the sync policy between the JSON files and the code constants.
-
-## Headline results
-
-Same-reality evaluation, i.e. every schedule settled under identical TOU and
-cap-and-trade rules (6 runs x 80 generations on the workshop case, 6 runs x 80
-generations on Mk04):
-
-| Instance | Baseline flat-price schedule | Market-aware schedule |
-|---|---|---|
-| Gear-shaft case | 521.3 min, 8520 CNY, 411.0 kgCO2 | 369.3 min, 8363 CNY, 398.6 kgCO2 |
-| Mk04 | 188.0 min, 165 CNY, 12.4 kgCO2 | 101.8 min, 145 CNY, 10.5 kgCO2 |
-
-Component ablation under the same reality ranks the mechanisms as speed selection,
-then TOU awareness, then cap-and-trade. Sensitivity analysis over cap ratios
-(0.9, 1.0, 1.1) and peak-valley spreads (flat, mild, wide) shows the price-carbon
-conflict: widening the spread from flat to wide lowers total cost by 2.7% while
-raising carbon emissions by 7.3% through horizon extension and standby energy.
+Per-run paired differences (integrated minus baseline) are minus 77.7 plus or
+minus 13.6 CNY, minus 32.4 plus or minus 15.3 min and plus 33.3 plus or minus
+14.4 kgCO2 on the workshop case, and minus 19.8 plus or minus 1.5 CNY, minus
+37.5 plus or minus 6.8 min and plus 0.90 plus or minus 0.26 kgCO2 on Mk04. The
+integrated schedule buys makespan and cost at a quantified carbon externality;
+the common-pool carbon price sweep shows no discernible scheduling response at
+the current proxy allowance price and a response onset between 0.08 and 0.8
+CNY per kgCO2 at four-price resolution. Shift-origin experiments show that the
+price-carbon trade-off sign depends on where the shift window sits against the
+tariff profile, and the joint standby and start-stop zeroing experiment shows
+that the trade-off channel varies with the instance.
 
 ## Reproduction note on the baseline algorithm
 
