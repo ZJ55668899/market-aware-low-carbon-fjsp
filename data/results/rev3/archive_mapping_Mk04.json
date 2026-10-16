@@ -1,0 +1,1992 @@
+{
+  "source_archive": "archive_Mk04.json",
+  "source_sha256": "69f78af483f46009ba4d7ab357b4397a10c814ae1d13b9b437c5d63a8ee20228",
+  "source_commit": "81cdfd8751e27f31d2a619e24d493f61b09f917a",
+  "max_planning_objective_error": 1.1368683772161603e-13,
+  "entries": [
+    {
+      "entry_index": 0,
+      "experiment": "anchor",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 1,
+      "experiment": "anchor",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 2,
+      "experiment": "anchor",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 3,
+      "experiment": "anchor",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 4,
+      "experiment": "anchor",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 5,
+      "experiment": "anchor",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 6,
+      "experiment": "E1",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 7,
+      "experiment": "E1",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 8,
+      "experiment": "E1",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 9,
+      "experiment": "E1",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 10,
+      "experiment": "E1",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 11,
+      "experiment": "E1",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 12,
+      "experiment": "E1",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 13,
+      "experiment": "E1",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 14,
+      "experiment": "E1",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 15,
+      "experiment": "E1",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 16,
+      "experiment": "E1",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 17,
+      "experiment": "E1",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 18,
+      "experiment": "E1",
+      "variant": "CTRL",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 19,
+      "experiment": "E1",
+      "variant": "CTRL",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 20,
+      "experiment": "E1",
+      "variant": "CTRL",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 21,
+      "experiment": "E1",
+      "variant": "CTRL",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 22,
+      "experiment": "E1",
+      "variant": "CTRL",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 23,
+      "experiment": "E1",
+      "variant": "CTRL",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 24,
+      "experiment": "E2",
+      "variant": "full",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 25,
+      "experiment": "E2",
+      "variant": "full",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 26,
+      "experiment": "E2",
+      "variant": "full",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 27,
+      "experiment": "E2",
+      "variant": "full",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 28,
+      "experiment": "E2",
+      "variant": "full",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 29,
+      "experiment": "E2",
+      "variant": "full",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 30,
+      "experiment": "E2",
+      "variant": "no-TOU",
+      "tou": false,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 31,
+      "experiment": "E2",
+      "variant": "no-TOU",
+      "tou": false,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 32,
+      "experiment": "E2",
+      "variant": "no-TOU",
+      "tou": false,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 33,
+      "experiment": "E2",
+      "variant": "no-TOU",
+      "tou": false,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 34,
+      "experiment": "E2",
+      "variant": "no-TOU",
+      "tou": false,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 35,
+      "experiment": "E2",
+      "variant": "no-TOU",
+      "tou": false,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 36,
+      "experiment": "E2",
+      "variant": "no-speed",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 37,
+      "experiment": "E2",
+      "variant": "no-speed",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 38,
+      "experiment": "E2",
+      "variant": "no-speed",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 39,
+      "experiment": "E2",
+      "variant": "no-speed",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 40,
+      "experiment": "E2",
+      "variant": "no-speed",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 41,
+      "experiment": "E2",
+      "variant": "no-speed",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 42,
+      "experiment": "E2",
+      "variant": "no-trade",
+      "tou": true,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 43,
+      "experiment": "E2",
+      "variant": "no-trade",
+      "tou": true,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 44,
+      "experiment": "E2",
+      "variant": "no-trade",
+      "tou": true,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 45,
+      "experiment": "E2",
+      "variant": "no-trade",
+      "tou": true,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 46,
+      "experiment": "E2",
+      "variant": "no-trade",
+      "tou": true,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 47,
+      "experiment": "E2",
+      "variant": "no-trade",
+      "tou": true,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 48,
+      "experiment": "E3",
+      "variant": "0.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 49,
+      "experiment": "E3",
+      "variant": "0.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 50,
+      "experiment": "E3",
+      "variant": "0.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 51,
+      "experiment": "E3",
+      "variant": "0.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 52,
+      "experiment": "E3",
+      "variant": "0.08",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 53,
+      "experiment": "E3",
+      "variant": "0.08",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 54,
+      "experiment": "E3",
+      "variant": "0.08",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 55,
+      "experiment": "E3",
+      "variant": "0.08",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 56,
+      "experiment": "E3",
+      "variant": "0.8",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.8,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 57,
+      "experiment": "E3",
+      "variant": "0.8",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.8,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 58,
+      "experiment": "E3",
+      "variant": "0.8",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.8,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 59,
+      "experiment": "E3",
+      "variant": "0.8",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.8,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 60,
+      "experiment": "E3",
+      "variant": "2.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 2.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 61,
+      "experiment": "E3",
+      "variant": "2.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 2.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 62,
+      "experiment": "E3",
+      "variant": "2.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 2.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 63,
+      "experiment": "E3",
+      "variant": "2.0",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 2.0,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 64,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 65,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 66,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 67,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 68,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 69,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 70,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 71,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 72,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 73,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 74,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 75,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 76,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 77,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 78,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 79,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 360,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 80,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 81,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 82,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 83,
+      "experiment": "E4",
+      "variant": "BASE",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 84,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 85,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 86,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 87,
+      "experiment": "E4",
+      "variant": "C1",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 480,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 7.849229190099999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 88,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 89,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 90,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 91,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 92,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 93,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 94,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 95,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 96,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 97,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 98,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 99,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.0,
+      "carbon_cap_kg": 5.817059999999999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 100,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 101,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 102,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 103,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 104,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 105,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 106,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 107,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 108,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 109,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 110,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 111,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.1,
+      "carbon_cap_kg": 7.166770285149999,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 112,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 113,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 114,
+      "experiment": "E5-anchor",
+      "variant": "flat",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 115,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 116,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 117,
+      "experiment": "E5",
+      "variant": "flat",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.0,
+        "flat": 1.0,
+        "valley": 1.0
+      }
+    },
+    {
+      "entry_index": 118,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 119,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 120,
+      "experiment": "E5-anchor",
+      "variant": "wide",
+      "tou": false,
+      "cap_trade": false,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 121,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 122,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    },
+    {
+      "entry_index": 123,
+      "experiment": "E5",
+      "variant": "wide",
+      "tou": true,
+      "cap_trade": true,
+      "carbon_price": 0.08,
+      "origin_min": 0.0,
+      "idle_ratio": 0.2,
+      "carbon_cap_kg": 8.2417851198,
+      "tou_multipliers": {
+        "peak": 1.6,
+        "flat": 1.0,
+        "valley": 0.4
+      }
+    }
+  ]
+}

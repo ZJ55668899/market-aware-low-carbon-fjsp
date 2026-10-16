@@ -1,96 +1,141 @@
 # market-aware-low-carbon-fjsp
 
-Companion code for the manuscript "Low-carbon flexible job-shop scheduling under
-coupled electricity pricing, speed selection and carbon trading: tri-objective
-optimization and the price-carbon conflict" (under review).
+Companion code and revision 3 materials for the Chinese manuscript
+[耦合分时电价、变速选择与线性碳结算的柔性作业车间调度：三目标优化与价格碳权衡的情景依赖性](docs/manuscript/TOU_speed_carbon_FJSP_rev3_cn.docx).
 
-The repository implements a tri-objective flexible job-shop scheduling model that
-integrates time-of-use (TOU) electricity pricing, discrete machine speed selection
-and carbon cap-and-trade settlement, together with the flat-price constant-power
-baseline model of Mei et al. (2024, Machines 12:590, doi:10.3390/machines12090590)
-used for same-reality comparison. A dynamic extension with machine breakdowns,
-rush-job insertions and three rescheduling policies is included in `fjsp/dynamic.py`.
+The model integrates time-of-use (TOU) electricity pricing, discrete machine
+speed selection and linear symmetric carbon settlement in tri-objective
+flexible job-shop scheduling. A unified electricity ledger bills and counts
+carbon from processing, internal idle gaps and busy-block startup transients.
+The flat-price baseline follows Mei et al. (2024, *Machines* 12:590,
+doi:10.3390/machines12090590). The repository also retains the earlier dynamic
+rescheduling extension in `fjsp/dynamic.py`.
 
-## Layout
+## Revision 3 documents and evidence
 
-- `fjsp/` core package: instance parsing, decoding, objectives, solvers, metrics
-  - `instance.py` Brandimarte parser, gear-shaft workshop case, energy parameters
-  - `schedule.py` left-shift decoding and the static energy-cost model
-  - `c1_model.py` market-aware model (TOU integral, power-speed law, cap-and-trade)
-  - `nsga2.py` NSGA-II backbone, guided initialization, SA tournament, elite criterion
-  - `dynamic.py` disruption events and right-shift / full / incremental rescheduling
-  - `metrics.py` IGD, C-metric and exact 3-D hypervolume
-- `examples/` experiment runners (Table 2 reproduction, case study, C1 and C2 experiments)
-- `tests/` degradation check (market-aware model with mechanisms off reproduces the
-  baseline term by term) and critical-path sanity test
-- `instances/` three Brandimarte instances (see below)
+- [Chinese manuscript (Word)](docs/manuscript/TOU_speed_carbon_FJSP_rev3_cn.docx)
+  and [searchable text](docs/manuscript/TOU_speed_carbon_FJSP_rev3_cn.md)
+- [Third-round response (Word)](docs/manuscript/第三轮审稿回应与修改说明.docx)
+  and [searchable text](docs/manuscript/第三轮审稿回应与修改说明.md)
+- [Standalone reproducibility supplement](docs/supplement/FJSP_rev3_reproducibility.zip)
+- [Reproduction guide](docs/REV3_REPRODUCTION.md),
+  [change record](CHANGELOG_REV3.md) and [validation record](VALIDATION.md)
+- [Unrounded reconstructed results](data/results/rev3/) and
+  [seven figures in PNG, SVG and PDF](docs/figures/rev3/)
 
-## Quick start
+The text copies support searching and review; the DOCX files retain the native
+equations and document layout. Author, affiliation and correspondence fields in
+the manuscript still contain placeholders.
 
-Run all commands from the repository root. The revised protocol entry point is
-`examples/run_c1_rev2.py`; the earlier `examples/run_c1.py` implements the first
-round protocol with the processing-only electricity ledger and is kept for
-traceability but superseded.
+## Reproduce revision 3
 
-    pip install -r requirements.txt
-    python tests/test_degradation.py        # mechanisms off == flat unified ledger
-    python tests/test_decode_bounds.py      # decoder sanity
-    python examples/run_c1_rev2.py gear 6 80   # unified-ledger main comparison
-    python examples/run_c1_pricepool.py gear 4 # common-pool carbon price response
-    python examples/run_c2.py 8 4           # disruption scenarios, three policies
-    python examples/run_table2.py 20        # baseline algorithm reproduction (long run)
+Run from the repository root with Python 3.9 or later. Reconstruct the reported
+numbers directly from the unchanged chromosome archives, without evolutionary
+search or third-party Python packages:
 
-Results, per-run front archives and result hashes are written to `results/` and
-`chaogai_output/` in the development workspace; the repository ships the summary
-JSONs under `data/results/`.
+```bash
+python examples/rebuild_rev3.py
+```
 
-## Headline results (unified ledger, revised protocol)
+This checks both source archive hashes, reconstructs the experiment configuration
+of every archive entry and verifies every original planning objective before
+writing `data/results/rev3/`. To regenerate figures and run existing checks:
 
-Same-reality evaluation with a pre-registered selection rule (minimum real-cost
-point of the run-union non-dominated set), six runs of eighty generations per
-model and instance, and a price-blind speed-aware control group:
+```bash
+pip install -r requirements.txt
+python examples/plot_rev3.py
+python tests/test_degradation.py
+python tests/test_decode_bounds.py
+python examples/run_c1_rev2.py --check
+python examples/run_c1_pricepool.py --check
+```
 
-| Instance | Flat-price baseline | Price-blind speed-aware control | Market-aware integrated model |
+The last two commands check the historical runners' import and output setup;
+they do not regenerate the archived revision 3 common pool. The detailed guide
+explains the pool construction, source indices, statistics and snapshot hashes.
+
+## Main results and their scope
+
+All three planning rules are evaluated under the same reality and electricity
+ledger. The speed-aware control is price blind; C1 jointly senses TOU and carbon
+settlement. Each cell below is the minimum-real-cost representative point of the
+re-evaluated run-union front, in min / CNY / kgCO2. These points differ from
+means of the six per-run selections.
+
+| Instance | Flat-price BASE | Speed-aware CTRL | Integrated C1 |
 |---|---|---|---|
-| Gear-shaft case | 437.1 min, 8488.6 CNY, 241.3 kgCO2 | 430.0 min, 8416.5 CNY, 255.2 kgCO2 | 406.2 min, 8396.9 CNY, 290.2 kgCO2 |
-| Mk04 | 154.0 min, 166.4 CNY, 7.7 kgCO2 | 108.1 min, 147.4 CNY, 8.4 kgCO2 | 105.8 min, 145.1 CNY, 8.7 kgCO2 |
+| Gear-shaft case | 437.1 / 8488.6 / 241.3 | 430.0 / 8416.5 / 255.2 | 406.2 / 8396.9 / 290.2 |
+| Mk04 | 154.0 / 166.4 / 7.7 | 108.1 / 147.4 / 8.4 | 105.8 / 145.1 / 8.7 |
 
-Per-run paired differences (integrated minus baseline) are minus 77.7 plus or
-minus 13.6 CNY, minus 32.4 plus or minus 15.3 min and plus 33.3 plus or minus
-14.4 kgCO2 on the workshop case, and minus 19.8 plus or minus 1.5 CNY, minus
-37.5 plus or minus 6.8 min and plus 0.90 plus or minus 0.26 kgCO2 on Mk04. The
-integrated schedule buys makespan and cost at a quantified carbon externality;
-the common-pool carbon price sweep shows no discernible scheduling response at
-the current proxy allowance price and a response onset between 0.08 and 0.8
-CNY per kgCO2 at four-price resolution. Shift-origin experiments show that the
-price-carbon trade-off sign depends on where the shift window sits against the
-tariff profile, and the joint standby and start-stop zeroing experiment shows
-that the trade-off channel varies with the instance.
+Across six paired runs, C1 minus BASE gives cost −77.7 ± 13.6 CNY, makespan
+−32.3 ± 15.3 min and carbon +33.3 ± 14.4 kgCO2 for the gear case; Mk04 gives
+−19.8 ± 1.5 CNY, −37.5 ± 6.8 min and +0.90 ± 0.23 kgCO2. Here ± denotes
+population descriptive SD (denominator n). The result JSON also supplies sample
+SD, individual paired differences and sample-based t intervals.
 
-## Reproduction note on the baseline algorithm
+The revised fixed pools combine archived E1 BASE candidates and four archived E3
+price fronts within each of four runs. Prices 0 and 0.08 CNY/kgCO2 select the
+same candidate in every pool; mean carbon decreases at the sampled prices 0.8
+and 2.0. This is evidence within those finite pools and the stated search budget.
+Shift-origin and joint idle/startup experiments show that the cost-carbon
+trade-off varies with the tested instance and scenario. Linear symmetric
+settlement makes the allowance cap an additive cost constant, so changing the
+cap does not change schedule ranking under this model.
 
-A component-wise reproduction of ASA-NSGA-EE from Mei et al. (2024) is included
-(`examples/run_ablation.py`). Under faithful implementation the reported dominance
-over plain NSGA-II does not reproduce on the Brandimarte family; the loss is
-localized in the elite-retention criterion and the adaptive rate schedule, while
-guided initialization is the consistently beneficial component. The solvers used
-for the market-aware model keep guided initialization accordingly.
+Tariff periods and multipliers, carbon price, wage, non-processing energy
+conventions and the speed-power exponent are scenario assumptions. See
+[data provenance](data/DATA.md); 0.08 is an illustrative internal carbon price.
 
-## Instances
+## Repository layout
 
-`instances/` ships Mk01, Mk04 and Mk09 of the Brandimarte family. The complete
-Mk01-Mk10 set is public benchmark data and can be downloaded from the TU/e
-benchmark collection (Job Shop Scheduling Benchmark Environments and Instances,
-ai-for-decision-making-tue on GitHub) under `data/fjsp/brandimarte/`.
+- `fjsp/`: instance parsing, queue-append decoding, objectives, solvers, metrics
+  and dynamic rescheduling; core files are unchanged from commit `81cdfd8`
+- `examples/rebuild_rev3.py`: numerical reconstruction from archived chromosomes
+- `examples/plot_rev3.py`: revision 3 figure exports
+- `examples/run_*.py`: retained historical optimization runners
+- `tests/`: model degradation and critical-path bound checks
+- `data/results/archive_*.json`: original chromosome archives
+- `data/results/rev3/`: current unrounded statistics, configuration maps and pools
+- `data/results/legacy_summary/`: original summaries retained for traceability
+- `data/results/baseline_reproduction/`: supplied historical baseline summaries
+  and logs; these do not include complete per-generation archives
+- `instances/`: Brandimarte Mk01–Mk10 benchmark instances
+- `docs/`: manuscript, response, supplement, figures and reproduction guide
 
-## Citation
+## Historical experiments
 
-If you use this code, please cite the companion manuscript (under review) and the
-baseline model paper:
+The following commands start optimization and may take substantial time. Their
+outputs go to ignored runtime directories such as `results/` and
+`chaogai_output/`, as defined by the individual runner. They are retained for
+further experiments; the offline reconstruction above is the entry point for
+checking the revision 3 reported numbers.
 
-    Mei Zheyu, Lu Yujun, Lv Liye. Research on multi-objective low-carbon flexible
-    job shop scheduling based on improved NSGA-II. Machines, 2024, 12(9): 590.
+```bash
+python examples/run_c1_rev2.py gear 6 80
+python examples/run_c1_pricepool.py gear 4
+python examples/run_c2.py 8 4
+python examples/run_table2.py 20
+python examples/run_ablation.py
+```
 
-## License
+`run_c1.py` uses the earlier processing-only bill. `run_c1_rev2.py` uses the
+unified ledger but does not export the original full chromosome archives.
+`run_c1_pricepool.py` uses separate new-seed searches, a different protocol from
+the archived-candidate revision 3 pool. Its original summary has moved to
+`data/results/legacy_summary/pricepool_gear.json`.
 
-MIT, see LICENSE.
+The supplied baseline reproduction records show higher mean HV for plain
+NSGA-II than ASA-fix on all ten Brandimarte instances; six reported coverage
+values C(NSGA-II > ASA-fix) equal one. These are checks of existing records,
+not a fresh twenty-run reproduction. Component results are retained in the
+same directory for inspection.
+
+## Citation and license
+
+Please cite the companion manuscript and the baseline model paper:
+
+> Mei Zheyu, Lu Yujun, Lv Liye. Research on multi-objective low-carbon flexible
+> job shop scheduling based on improved NSGA-II. Machines, 2024, 12(9): 590.
+
+The software is licensed under [MIT](LICENSE). Dataset provenance is documented
+separately in [data/DATA.md](data/DATA.md).

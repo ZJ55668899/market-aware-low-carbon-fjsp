@@ -16,14 +16,14 @@
    1.9387
   ],
   "signed_09_to_10": [
-   1.9387,
-   1.9387,
-   1.9387
+   -1.9387,
+   -1.9387,
+   -1.9387
   ],
   "signed_10_to_11": [
-   1.9387,
-   1.9387,
-   1.9387
+   -1.9387,
+   -1.9387,
+   -1.9387
   ],
   "pairwise_diff_invariant": true
  },
@@ -358,5 +358,6 @@
   }
  },
  "archive_sha256": "cb64e3c48106d2f3648388cc4f5ab50cbaf2bc43a9d025a13149e104b2d6a4ca",
- "archive_file": "chaogai_output/archive_gear.json"
+ "archive_file": "chaogai_output/archive_gear.json",
+ "revision_note": "E6 signed arrays corrected in local revision 3 supplement. Original summary retained in legacy_summary. Use rev3 outputs for unrounded statistical summaries."
 }

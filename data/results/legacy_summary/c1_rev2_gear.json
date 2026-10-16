@@ -1,0 +1,362 @@
+{
+ "instance": "gear",
+ "cap": 242.33292288069987,
+ "runs": 6,
+ "gens": 80,
+ "E6_cap_translation": {
+  "expected_signed_shift_per_0p1": -1.9387,
+  "recorded_magnitudes_09_to_10": [
+   1.9387,
+   1.9387,
+   1.9387
+  ],
+  "recorded_magnitudes_10_to_11": [
+   1.9387,
+   1.9387,
+   1.9387
+  ],
+  "signed_09_to_10": [
+   1.9387,
+   1.9387,
+   1.9387
+  ],
+  "signed_10_to_11": [
+   1.9387,
+   1.9387,
+   1.9387
+  ],
+  "pairwise_diff_invariant": true
+ },
+ "E1": {
+  "BASE": {
+   "selected": {
+    "makespan": 437.1,
+    "cost": 8488.6,
+    "carbon": 241.3
+   },
+   "per_run_cost": [
+    8489.1,
+    8488.6,
+    8488.8,
+    8489.9,
+    8489.2,
+    8489.5
+   ],
+   "per_run_makespan": [
+    427.1,
+    437.1,
+    427.1,
+    420.4,
+    427.1,
+    427.1
+   ],
+   "per_run_carbon": [
+    242.3,
+    241.3,
+    241.7,
+    243.9,
+    242.2,
+    242.5
+   ],
+   "breakdown": {
+    "material": 7400,
+    "labor": 949.5,
+    "elec": 139.2,
+    "settlement": -0.1
+   },
+   "tier_kwh": {
+    "valley": 418.7,
+    "flat": 3.6
+   },
+   "energy_split": {
+    "proc": 420.1,
+    "idle": 2.2,
+    "ss": 0.8
+   },
+   "speed_hist": null,
+   "clock_span": [
+    0.0,
+    437.1
+   ]
+  },
+  "CTRL_price-blind_speed-aware": {
+   "selected": {
+    "makespan": 430.0,
+    "cost": 8416.5,
+    "carbon": 255.2
+   },
+   "per_run_cost": [
+    8416.5,
+    8421.4,
+    8430.2,
+    8425.8,
+    8421.1,
+    8437.5
+   ],
+   "per_run_makespan": [
+    430.0,
+    412.5,
+    444.8,
+    407.7,
+    418.1,
+    427.1
+   ],
+   "per_run_carbon": [
+    255.2,
+    245.3,
+    246.9,
+    254.5,
+    252.1,
+    239.0
+   ],
+   "breakdown": {
+    "material": 7400,
+    "labor": 868.5,
+    "elec": 147.0,
+    "settlement": 1.0
+   },
+   "tier_kwh": {
+    "valley": 443.1,
+    "flat": 3.4
+   },
+   "energy_split": {
+    "proc": 438.7,
+    "idle": 7.9,
+    "ss": 1.0
+   },
+   "speed_hist": [
+    3,
+    17,
+    38
+   ],
+   "clock_span": [
+    0.0,
+    430.0
+   ]
+  },
+  "C1_market-aware": {
+   "selected": {
+    "makespan": 406.2,
+    "cost": 8396.9,
+    "carbon": 290.2
+   },
+   "per_run_cost": [
+    8396.9,
+    8411.0,
+    8436.2,
+    8405.8,
+    8419.8,
+    8399.3
+   ],
+   "per_run_makespan": [
+    406.2,
+    385.4,
+    417.6,
+    382.0,
+    377.9,
+    402.6
+   ],
+   "per_run_carbon": [
+    290.2,
+    279.9,
+    246.2,
+    281.1,
+    286.4,
+    270.1
+   ],
+   "breakdown": {
+    "material": 7400,
+    "labor": 827.8,
+    "elec": 165.2,
+    "settlement": 3.8
+   },
+   "tier_kwh": {
+    "valley": 507.2
+   },
+   "energy_split": {
+    "proc": 495.4,
+    "idle": 11.8,
+    "ss": 1.6
+   },
+   "speed_hist": [
+    7,
+    9,
+    42
+   ],
+   "clock_span": [
+    0.0,
+    406.2
+   ]
+  }
+ },
+ "E1_cmetric": {
+  "C1_market-aware>BASE": 1.0,
+  "BASE>C1_market-aware": 0.0,
+  "C1_market-aware>CTRL_price-blind_speed-aware": 0.273,
+  "CTRL_price-blind_speed-aware>C1_market-aware": 0.353,
+  "CTRL_price-blind_speed-aware>BASE": 0.665,
+  "BASE>CTRL_price-blind_speed-aware": 0.0
+ },
+ "E2": {
+  "full C1": {
+   "makespan": 406.2,
+   "cost": 8396.9,
+   "carbon": 290.2,
+   "energy_split": {
+    "proc": 495.4,
+    "idle": 11.8,
+    "ss": 1.6
+   }
+  },
+  "no-TOU": {
+   "makespan": 439.5,
+   "cost": 8410.2,
+   "carbon": 273.5,
+   "energy_split": {
+    "proc": 466.2,
+    "idle": 12.1,
+    "ss": 1.3
+   }
+  },
+  "no-speed": {
+   "makespan": 420.4,
+   "cost": 8488.8,
+   "carbon": 242.3,
+   "energy_split": {
+    "proc": 422.3,
+    "idle": 1.8,
+    "ss": 0.9
+   }
+  },
+  "no-trade": {
+   "makespan": 405.0,
+   "cost": 8404.2,
+   "carbon": 265.2,
+   "energy_split": {
+    "proc": 461.3,
+    "idle": 2.9,
+    "ss": 0.8
+   }
+  }
+ },
+ "E3_price_sweep": {
+  "0.0": {
+   "makespan": 401.8,
+   "cost": 8401.2,
+   "carbon": 286.9
+  },
+  "0.08": {
+   "makespan": 406.2,
+   "cost": 8396.9,
+   "carbon": 290.2
+  },
+  "0.8": {
+   "makespan": 368.3,
+   "cost": 8422.0,
+   "carbon": 272.2
+  },
+  "2.0": {
+   "makespan": 455.3,
+   "cost": 8439.1,
+   "carbon": 224.7
+  }
+ },
+ "E4_origins": {
+  "origin0/BASE": {
+   "makespan": 427.1,
+   "cost": 8488.4,
+   "carbon": 241.9,
+   "tier_kwh": {
+    "valley": 421.6,
+    "flat": 1.7
+   },
+   "ops_crossing_tariff_boundary": 2
+  },
+  "origin0/C1": {
+   "makespan": 382.8,
+   "cost": 8400.3,
+   "carbon": 279.6,
+   "tier_kwh": {
+    "valley": 489.4
+   },
+   "ops_crossing_tariff_boundary": 0
+  },
+  "origin360/BASE": {
+   "makespan": 471.3,
+   "cost": 8750.9,
+   "carbon": 241.2,
+   "tier_kwh": {
+    "valley": 36.8,
+    "flat": 231.2,
+    "peak": 154.1
+   },
+   "ops_crossing_tariff_boundary": 15
+  },
+  "origin360/C1": {
+   "makespan": 448.7,
+   "cost": 8687.8,
+   "carbon": 236.3,
+   "tier_kwh": {
+    "valley": 52.8,
+    "flat": 203.9,
+    "peak": 156.5
+   },
+   "ops_crossing_tariff_boundary": 16
+  },
+  "origin480/BASE": {
+   "makespan": 476.3,
+   "cost": 8832.9,
+   "carbon": 241.0,
+   "tier_kwh": {
+    "peak": 293.0,
+    "flat": 128.9
+   },
+   "ops_crossing_tariff_boundary": 11
+  },
+  "origin480/C1": {
+   "makespan": 998.9,
+   "cost": 8684.6,
+   "carbon": 223.2,
+   "tier_kwh": {
+    "peak": 137.8,
+    "flat": 100.7,
+    "valley": 152.2
+   },
+   "ops_crossing_tariff_boundary": 12
+  }
+ },
+ "E5_idle_boundary": {
+  "idle0.0/flat": {
+   "makespan": 464.8,
+   "cost": 8610.6,
+   "carbon": 239.5
+  },
+  "idle0.0/wide": {
+   "makespan": 393.5,
+   "cost": 8406.1,
+   "carbon": 279.3
+  },
+  "idle0.1/flat": {
+   "makespan": 486.3,
+   "cost": 8623.8,
+   "carbon": 232.6
+  },
+  "idle0.1/wide": {
+   "makespan": 406.2,
+   "cost": 8393.9,
+   "carbon": 271.9
+  },
+  "idle0.2/flat": {
+   "makespan": 444.6,
+   "cost": 8631.8,
+   "carbon": 239.2
+  },
+  "idle0.2/wide": {
+   "makespan": 373.2,
+   "cost": 8399.7,
+   "carbon": 287.4
+  }
+ },
+ "archive_sha256": "cb64e3c48106d2f3648388cc4f5ab50cbaf2bc43a9d025a13149e104b2d6a4ca",
+ "archive_file": "chaogai_output/archive_gear.json"
+}

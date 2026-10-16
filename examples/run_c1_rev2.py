@@ -1,7 +1,10 @@
 import os
 import sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-"""C1 experiments, revised protocol (review M1-M6 driven).
+"""Historical C1 revision 2 optimization runner (review M1-M6 driven).
+
+For revision 3 archive-based reconstruction use examples/rebuild_rev3.py.
+This historical runner does not export the original full chromosome archives.
 
 Pre-registered rules:
   selection   : minimum total cost point of the run-union Pareto front after
@@ -16,7 +19,7 @@ Models:
 Experiments: E1 main comparison, E2 mechanism ablation, E3 carbon-price sweep,
 E4 shift-origin timing discrimination, E5 idle-ratio boundary, E6 cap translation
 invariance check.
-Usage: python run_c1.py <gear|Mk04|Mk09> [runs] [gens]
+Usage: python examples/run_c1_rev2.py <gear|Mk04|Mk09> [runs] [gens]
 """
 import json
 import statistics
@@ -31,6 +34,11 @@ from fjsp.instance import gear_shaft_instance, load_brandimarte
 from fjsp.metrics import c_metric, pareto_set
 from fjsp.nsga2 import Config, run
 from fjsp.schedule import decode
+
+os.makedirs("results", exist_ok=True)
+if "--check" in sys.argv:
+    print("Imports OK; results directory ready; no optimization run")
+    raise SystemExit(0)
 
 IN = sys.argv[1] if len(sys.argv) > 1 else "gear"
 RUNS = int(sys.argv[2]) if len(sys.argv) > 2 else 6

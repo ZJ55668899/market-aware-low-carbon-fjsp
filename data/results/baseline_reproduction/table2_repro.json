@@ -1,0 +1,342 @@
+{
+ "Mk01": {
+  "NSGA-II": {
+   "igd_best": 0.002,
+   "igd_mean": 0.0128,
+   "hv_best": 1.1397,
+   "hv_mean": 1.0847
+  },
+  "ASA-fix": {
+   "igd_best": 0.0348,
+   "igd_mean": 0.1236,
+   "hv_best": 1.0365,
+   "hv_mean": 0.7497
+  },
+  "ASA-adp": {
+   "igd_best": 0.0308,
+   "igd_mean": 0.2507,
+   "hv_best": 0.5286,
+   "hv_mean": 0.2409
+  },
+  "MOGWO": {
+   "igd_best": 0.0162,
+   "igd_mean": 0.1474,
+   "hv_best": 0.9932,
+   "hv_mean": 0.5079
+  },
+  "C(ASA-fix>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-fix)": 1.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.25
+ },
+ "Mk02": {
+  "NSGA-II": {
+   "igd_best": 0.0117,
+   "igd_mean": 0.0749,
+   "hv_best": 0.843,
+   "hv_mean": 0.7096
+  },
+  "ASA-fix": {
+   "igd_best": 0.1917,
+   "igd_mean": 0.3908,
+   "hv_best": 0.364,
+   "hv_mean": 0.2552
+  },
+  "ASA-adp": {
+   "igd_best": 0.2558,
+   "igd_mean": 1.0749,
+   "hv_best": 0.1149,
+   "hv_mean": 0.0151
+  },
+  "MOGWO": {
+   "igd_best": 2.3282,
+   "igd_mean": 3.4971,
+   "hv_best": 0.0,
+   "hv_mean": 0.0
+  },
+  "C(ASA-fix>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-fix)": 1.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.917
+ },
+ "Mk03": {
+  "NSGA-II": {
+   "igd_best": 0.0141,
+   "igd_mean": 0.0785,
+   "hv_best": 0.7737,
+   "hv_mean": 0.6722
+  },
+  "ASA-fix": {
+   "igd_best": 0.0367,
+   "igd_mean": 0.1066,
+   "hv_best": 0.5367,
+   "hv_mean": 0.4493
+  },
+  "ASA-adp": {
+   "igd_best": 0.1781,
+   "igd_mean": 1.0508,
+   "hv_best": 0.1563,
+   "hv_mean": 0.0246
+  },
+  "MOGWO": {
+   "igd_best": 0.8734,
+   "igd_mean": 1.3217,
+   "hv_best": 0.0,
+   "hv_mean": 0.0
+  },
+  "C(ASA-fix>NSGA-II)": 0.07,
+  "C(NSGA-II>ASA-fix)": 0.628,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.765
+ },
+ "Mk04": {
+  "NSGA-II": {
+   "igd_best": 0.0037,
+   "igd_mean": 0.0265,
+   "hv_best": 0.9197,
+   "hv_mean": 0.8672
+  },
+  "ASA-fix": {
+   "igd_best": 0.0849,
+   "igd_mean": 0.1425,
+   "hv_best": 0.6489,
+   "hv_mean": 0.5675
+  },
+  "ASA-adp": {
+   "igd_best": 0.1587,
+   "igd_mean": 0.3478,
+   "hv_best": 0.2844,
+   "hv_mean": 0.1492
+  },
+  "MOGWO": {
+   "igd_best": 0.0562,
+   "igd_mean": 0.093,
+   "hv_best": 0.7229,
+   "hv_mean": 0.6553
+  },
+  "C(ASA-fix>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-fix)": 1.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.011,
+  "C(ASA-fix>MOGWO)": 0.03
+ },
+ "Mk05": {
+  "NSGA-II": {
+   "igd_best": 0.0004,
+   "igd_mean": 0.0221,
+   "hv_best": 0.837,
+   "hv_mean": 0.7444
+  },
+  "ASA-fix": {
+   "igd_best": 0.1363,
+   "igd_mean": 0.201,
+   "hv_best": 0.6024,
+   "hv_mean": 0.3952
+  },
+  "ASA-adp": {
+   "igd_best": 0.456,
+   "igd_mean": 0.8026,
+   "hv_best": 0.1353,
+   "hv_mean": 0.0094
+  },
+  "MOGWO": {
+   "igd_best": 0.0,
+   "igd_mean": 0.0484,
+   "hv_best": 0.5547,
+   "hv_mean": 0.3013
+  },
+  "C(ASA-fix>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-fix)": 1.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.004,
+  "C(ASA-fix>MOGWO)": 0.0
+ },
+ "Mk06": {
+  "NSGA-II": {
+   "igd_best": 0.0193,
+   "igd_mean": 0.2933,
+   "hv_best": 0.6614,
+   "hv_mean": 0.3847
+  },
+  "ASA-fix": {
+   "igd_best": 0.0197,
+   "igd_mean": 0.1858,
+   "hv_best": 0.2648,
+   "hv_mean": 0.1172
+  },
+  "ASA-adp": {
+   "igd_best": 0.3404,
+   "igd_mean": 1.6622,
+   "hv_best": 0.0004,
+   "hv_mean": 0.0
+  },
+  "MOGWO": {
+   "igd_best": 1.5584,
+   "igd_mean": 2.9431,
+   "hv_best": 0.0,
+   "hv_mean": 0.0
+  },
+  "C(ASA-fix>NSGA-II)": 0.646,
+  "C(NSGA-II>ASA-fix)": 0.111,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 0.993,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.167
+ },
+ "Mk07": {
+  "NSGA-II": {
+   "igd_best": 0.0142,
+   "igd_mean": 0.069,
+   "hv_best": 1.0217,
+   "hv_mean": 0.8953
+  },
+  "ASA-fix": {
+   "igd_best": 0.0959,
+   "igd_mean": 0.1542,
+   "hv_best": 0.8229,
+   "hv_mean": 0.6924
+  },
+  "ASA-adp": {
+   "igd_best": 0.261,
+   "igd_mean": 0.8259,
+   "hv_best": 0.4513,
+   "hv_mean": 0.1256
+  },
+  "MOGWO": {
+   "igd_best": 0.3457,
+   "igd_mean": 0.8713,
+   "hv_best": 0.1584,
+   "hv_mean": 0.0129
+  },
+  "C(ASA-fix>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-fix)": 1.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.714
+ },
+ "Mk08": {
+  "NSGA-II": {
+   "igd_best": 0.007,
+   "igd_mean": 0.0269,
+   "hv_best": 0.6754,
+   "hv_mean": 0.53
+  },
+  "ASA-fix": {
+   "igd_best": 0.0255,
+   "igd_mean": 0.1428,
+   "hv_best": 0.2296,
+   "hv_mean": 0.0999
+  },
+  "ASA-adp": {
+   "igd_best": 0.2641,
+   "igd_mean": 0.98,
+   "hv_best": 0.1671,
+   "hv_mean": 0.0159
+  },
+  "MOGWO": {
+   "igd_best": 0.0095,
+   "igd_mean": 0.0778,
+   "hv_best": 0.2983,
+   "hv_mean": 0.1423
+  },
+  "C(ASA-fix>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-fix)": 1.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 0.974,
+  "C(ASA-adp>ASA-fix)": 0.053,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.171
+ },
+ "Mk09": {
+  "NSGA-II": {
+   "igd_best": 0.0,
+   "igd_mean": 0.2118,
+   "hv_best": 0.9438,
+   "hv_mean": 0.5402
+  },
+  "ASA-fix": {
+   "igd_best": 0.0298,
+   "igd_mean": 0.1433,
+   "hv_best": 0.3606,
+   "hv_mean": 0.1386
+  },
+  "ASA-adp": {
+   "igd_best": 0.4041,
+   "igd_mean": 0.7797,
+   "hv_best": 0.003,
+   "hv_mean": 0.0002
+  },
+  "MOGWO": {
+   "igd_best": 0.8598,
+   "igd_mean": 1.3777,
+   "hv_best": 0.0,
+   "hv_mean": 0.0
+  },
+  "C(ASA-fix>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-fix)": 0.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.0
+ },
+ "Mk10": {
+  "NSGA-II": {
+   "igd_best": 0.0217,
+   "igd_mean": 0.1756,
+   "hv_best": 0.7848,
+   "hv_mean": 0.5804
+  },
+  "ASA-fix": {
+   "igd_best": 0.0073,
+   "igd_mean": 0.0524,
+   "hv_best": 0.742,
+   "hv_mean": 0.5664
+  },
+  "ASA-adp": {
+   "igd_best": 0.4906,
+   "igd_mean": 0.8233,
+   "hv_best": 0.1589,
+   "hv_mean": 0.066
+  },
+  "MOGWO": {
+   "igd_best": 1.297,
+   "igd_mean": 1.8397,
+   "hv_best": 0.0,
+   "hv_mean": 0.0
+  },
+  "C(ASA-fix>NSGA-II)": 0.125,
+  "C(NSGA-II>ASA-fix)": 0.0,
+  "C(ASA-adp>NSGA-II)": 0.0,
+  "C(NSGA-II>ASA-adp)": 1.0,
+  "C(ASA-fix>ASA-adp)": 1.0,
+  "C(ASA-adp>ASA-fix)": 0.0,
+  "C(MOGWO>NSGA-II)": 0.0,
+  "C(ASA-fix>MOGWO)": 0.955
+ }
+}

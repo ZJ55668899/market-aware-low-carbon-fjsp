@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.docx -text
+*.zip -text
+*.png -text
+*.pdf -text

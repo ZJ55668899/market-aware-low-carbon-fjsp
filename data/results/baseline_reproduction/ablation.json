@@ -1,0 +1,113 @@
+{
+ "gear": {
+  "V0 NSGA-II (base)": {
+   "best_makespan": 388.0,
+   "hv": 1.0676,
+   "igd": 0.0268
+  },
+  "V1 +GLR init": {
+   "best_makespan": 388.0,
+   "hv": 1.0744,
+   "igd": 0.0104
+  },
+  "V2 +GLR+SA-tournament": {
+   "best_makespan": 388.0,
+   "hv": 0.9613,
+   "igd": 0.0197
+  },
+  "V3 +GLR+SA+elite (=ASA-fix)": {
+   "best_makespan": 392.9,
+   "hv": 0.7365,
+   "igd": 0.031
+  },
+  "V4 ASA adaptive rates": {
+   "best_makespan": 408.7,
+   "hv": 0.2583,
+   "igd": 0.2349
+  },
+  "V5 +GLR+elite (no SA)": {
+   "best_makespan": 392.9,
+   "hv": 0.7894,
+   "igd": 0.033
+  },
+  "V6 elite_crit2 (rank fill)": {
+   "best_makespan": 392.9,
+   "hv": 0.7365,
+   "igd": 0.031
+  }
+ },
+ "Mk01": {
+  "V0 NSGA-II (base)": {
+   "best_makespan": 43.0,
+   "hv": 1.0991,
+   "igd": 0.0111
+  },
+  "V1 +GLR init": {
+   "best_makespan": 44.0,
+   "hv": 0.9774,
+   "igd": 0.0177
+  },
+  "V2 +GLR+SA-tournament": {
+   "best_makespan": 44.0,
+   "hv": 0.9987,
+   "igd": 0.014
+  },
+  "V3 +GLR+SA+elite (=ASA-fix)": {
+   "best_makespan": 46.0,
+   "hv": 0.7669,
+   "igd": 0.1528
+  },
+  "V4 ASA adaptive rates": {
+   "best_makespan": 52.0,
+   "hv": 0.2704,
+   "igd": 0.2521
+  },
+  "V5 +GLR+elite (no SA)": {
+   "best_makespan": 46.0,
+   "hv": 0.7956,
+   "igd": 0.1346
+  },
+  "V6 elite_crit2 (rank fill)": {
+   "best_makespan": 46.0,
+   "hv": 0.7669,
+   "igd": 0.1528
+  }
+ },
+ "Mk04": {
+  "V0 NSGA-II (base)": {
+   "best_makespan": 77.0,
+   "hv": 1.0186,
+   "igd": 0.0187
+  },
+  "V1 +GLR init": {
+   "best_makespan": 80.0,
+   "hv": 0.98,
+   "igd": 0.0228
+  },
+  "V2 +GLR+SA-tournament": {
+   "best_makespan": 78.0,
+   "hv": 0.9933,
+   "igd": 0.0199
+  },
+  "V3 +GLR+SA+elite (=ASA-fix)": {
+   "best_makespan": 95.0,
+   "hv": 0.7822,
+   "igd": 0.1259
+  },
+  "V4 ASA adaptive rates": {
+   "best_makespan": 109.0,
+   "hv": 0.3083,
+   "igd": 0.3205
+  },
+  "V5 +GLR+elite (no SA)": {
+   "best_makespan": 92.0,
+   "hv": 0.7886,
+   "igd": 0.105
+  },
+  "V6 elite_crit2 (rank fill)": {
+   "best_makespan": 95.0,
+   "hv": 0.7822,
+   "igd": 0.1259
+  }
+ }
+}

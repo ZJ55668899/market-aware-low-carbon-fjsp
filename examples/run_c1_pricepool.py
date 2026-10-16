@@ -1,10 +1,13 @@
-"""Common-pool carbon price response (review R2-M2 identification fix).
+"""Historical new-seed common-pool carbon price experiment (revision 2).
+
+Revision 3 reconstructs pools from existing archives instead. Use
+examples/rebuild_rev3.py for the manuscript's current Table 5 and Figure 5.
 
 Each price level is solved separately (finite budget), then for every run the
 candidate schedules obtained at all prices (plus the flat-price baseline runs)
 are pooled and re-evaluated at every price under the identical reality. The
 minimum-cost selection from this common pool guarantees emissions non-increasing
-in the carbon price, separating the true price response from search omission.
+in the carbon price within this fixed finite pool.
 Usage: python run_c1_pricepool.py [inst] [runs]
 """
 import json
@@ -16,11 +19,16 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from fjsp.c1_model import TOUSpeedCarbonModel, FlatUnifiedModel
 from fjsp.instance import gear_shaft_instance, load_brandimarte
 from fjsp.nsga2 import Config, run
 from fjsp.schedule import decode
+
+os.makedirs("results", exist_ok=True)
+if "--check" in sys.argv:
+    print("Imports OK; results directory ready; no optimization run")
+    raise SystemExit(0)
 
 IN = sys.argv[1] if len(sys.argv) > 1 else "gear"
 RUNS = int(sys.argv[2]) if len(sys.argv) > 2 else 4

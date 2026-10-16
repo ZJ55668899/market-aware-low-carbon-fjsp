@@ -1,0 +1,22 @@
+gear  V0 NSGA-II (base)              mk=   388.0 HV=1.0676 IGD=0.0268
+gear  V1 +GLR init                   mk=   388.0 HV=1.0744 IGD=0.0104
+gear  V2 +GLR+SA-tournament          mk=   388.0 HV=0.9613 IGD=0.0197
+gear  V3 +GLR+SA+elite (=ASA-fix)    mk=   392.9 HV=0.7365 IGD=0.0310
+gear  V4 ASA adaptive rates          mk=   408.7 HV=0.2583 IGD=0.2349
+gear  V5 +GLR+elite (no SA)          mk=   392.9 HV=0.7894 IGD=0.0330
+gear  V6 elite_crit2 (rank fill)     mk=   392.9 HV=0.7365 IGD=0.0310
+Mk01  V0 NSGA-II (base)              mk=    43.0 HV=1.0991 IGD=0.0111
+Mk01  V1 +GLR init                   mk=    44.0 HV=0.9774 IGD=0.0177
+Mk01  V2 +GLR+SA-tournament          mk=    44.0 HV=0.9987 IGD=0.0140
+Mk01  V3 +GLR+SA+elite (=ASA-fix)    mk=    46.0 HV=0.7669 IGD=0.1528
+Mk01  V4 ASA adaptive rates          mk=    52.0 HV=0.2704 IGD=0.2521
+Mk01  V5 +GLR+elite (no SA)          mk=    46.0 HV=0.7956 IGD=0.1346
+Mk01  V6 elite_crit2 (rank fill)     mk=    46.0 HV=0.7669 IGD=0.1528
+Mk04  V0 NSGA-II (base)              mk=    77.0 HV=1.0186 IGD=0.0187
+Mk04  V1 +GLR init                   mk=    80.0 HV=0.9800 IGD=0.0228
+Mk04  V2 +GLR+SA-tournament          mk=    78.0 HV=0.9933 IGD=0.0199
+Mk04  V3 +GLR+SA+elite (=ASA-fix)    mk=    95.0 HV=0.7822 IGD=0.1259
+Mk04  V4 ASA adaptive rates          mk=   109.0 HV=0.3083 IGD=0.3205
+Mk04  V5 +GLR+elite (no SA)          mk=    92.0 HV=0.7886 IGD=0.1050
+Mk04  V6 elite_crit2 (rank fill)     mk=    95.0 HV=0.7822 IGD=0.1259
+ablation done

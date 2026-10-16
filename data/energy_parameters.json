@@ -88,5 +88,5 @@
   25.0,
   30.0
  ],
- "notes": "Constants mirrored in fjsp/instance.py and fjsp/c1_model.py; keep in sync. Synthetic profile applies to Brandimarte instances only (assumption A3); the gear-shaft case uses measured powers from gear_shaft_case.json."
+ "notes": "Scenario assumptions except industrial-source case parameters transcribed from Mei et al. (2024). Carbon price 0.08 and tariff shape are illustrative; no exact official tariff or market-average claim. Idle and startup energy scale jointly. Core numeric constants unchanged."
 }
